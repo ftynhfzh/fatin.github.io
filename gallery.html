@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>gallery</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Define the typing effect animation */
+@keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    /* Apply the typing effect */
+    .typewriter {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(30) 1s forwards; /* 4s to type, 30 steps */
+    }
+
+/* Style the header */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #f4f818;
+  color: white;
+  background-image: url('https://as2.ftcdn.net/v2/jpg/02/61/69/27/1000_F_261692736_77AraArE3b9yF8eJqeq27f7xkTG5By09.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/* Define the slide-in animation */
+@keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Apply the animation to the text */
+    .slide-text {
+      font-size: 36px;
+      color: #4b4408;
+      animation: slideIn 1.5s ease-out;
+    }
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #ffee00;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  background-image: url('https://wallpapers.com/images/hd/solid-yellow-background-ywbvk86fc88fk2hj.jpg');
+}
+
+.container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item p {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-color: #b8b52e;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+/* Footer */
+.footer {
+  padding: 2px;
+  text-align: center;
+  background: #f0ed6a;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 class="typewriter"><font color= #4f4504 >WELCOME TO FATINPIJA'S WEBSITE</h1>
+  <p>Student in Diploma Information Management</font></p>
+</div>
+
+<div class="navbar">
+  <a href="file:///C:/Users/User/Downloads/318%20individual/home.html">home</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/my_biodata.html">biodata</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/education.html">education</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/experience.html">experience</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/family.html">family</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/gallery.html">gallery</a>
+  <a href="https://wa.link/702n0p" class="right">whatsapp</a>
+</div>
+
+<div class="main">
+    <h2 class="slide-text">MY MEMORIES!</h2>
+    <p>Let's explore !!</p>
+    <p><i>Click on the <sup>images</sup> below for full view.</i></p>
+
+
+<div class="container">
+  <section id="gallery">
+      <h2>My Photo Gallery</h2>
+      <div class="gallery">
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/kawan1.jpeg">
+              <img src="C:\Users\User\Downloads/kawan1.jpeg" alt="friends1" style="width:150px" border="2">
+              <p>Uni Friends</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/duo1.jpeg">
+              <img src="C:\Users\User\Downloads/duo1.jpeg" alt="duo1" style="width:150px" border="2">
+              <p>With my beloved icahh!</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/duo3.jpeg">
+              <img src="C:\Users\User\Downloads/duo3.jpeg" alt="duo3" style="width:150px" border="2">
+              <p>My lovely nana!</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/kawan3.jpeg">
+              <img src="C:\Users\User\Downloads/kawan3.jpeg" alt="friends3" style="width:150px" border="2">
+              <p>My pwetty friends</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/trio1.jpeg">
+              <img src="C:\Users\User\Downloads/trio1.jpeg" alt="trio1" style="width:150px" border="2">
+              <p>Cycling in KL</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/kawan2.jpeg">
+              <img src="C:\Users\User\Downloads/kawan2.jpeg" alt="friends2" style="width:150px" border="2">
+              <p>Classmate beauties</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/intern.jpeg">
+              <img src="C:\Users\User\Downloads/intern.jpeg" alt="intern" style="width:150px" border="2">
+              <p>Internship Pwends</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/fam1.jpeg">
+              <img src="C:\Users\User\Downloads/fam1.jpeg" alt="fam1" style="width:150px" border="2">
+              <p>My big fam</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/duo2.jpeg">
+              <img src="C:\Users\User\Downloads/duo2.jpeg" alt="duo2" style="width:150px" border="2">
+              <p>Eid with my icah!</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/trio2.jpeg">
+              <img src="C:\Users\User\Downloads/trio2.jpeg" alt="trio2" style="width:150px" border="2">
+              <p>We Love Trio!</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/trio3.jpeg">
+              <img src="C:\Users\User\Downloads/trio3.jpeg" alt="trio3" style="width:150px" border="2">
+              <p>Veru cutesy, Very demure!</p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a target="_blank" href="C:\Users\User\Downloads/kawan4.jpeg">
+              <img src="C:\Users\User\Downloads/kawan4.jpeg" alt="friends4" style="width:150px" border="2">
+              <p>My beloved roommates</p>
+            </a>
+          </div>
+          
+      </div>
+  </section>
+</div>
+
+<video width="320" height="240" controls>
+  <source src="C:\Users\User\Downloads/vid1.mp4" type="video/mp4">
+  <source src="C:\Users\User\Downloads/vid1.ogg" type="video/ogg">
+  <p>A bit of my talent hihi</p>
+</video>
+
+
+</div>
+
+<div class="footer">
+  <p><b><small>Develop by <ins>fatins</ins> <i>for IMD318 individual assignment</i></small></b></p>
+</div>
+
+</body>
+</html>

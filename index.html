@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Define the typing effect animation */
+@keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    /* Apply the typing effect */
+    .typewriter {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(30) 1s forwards; /* 4s to type, 30 steps */
+    }
+
+/* Define the bounce animation */
+@keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    /* Apply the bounce animation to the text */
+    .bounce-text {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 40px;
+      color: #a823e6;
+      animation: bounce 1s ease infinite;
+    }
+
+.clock {
+      font-size: 15px;
+      color: #333;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+/* Style the header */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #f1aaee;
+  color: white;
+  background-image: url('https://as2.ftcdn.net/v2/jpg/04/25/22/17/1000_F_425221705_qOttbiNaY4oVnlKO6gX8sy7s0UrJvBYb.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #8f089b;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.audio-player {
+            margin-top: 20px;
+        }
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  background-image: url('https://wallpapercave.com/wp/wp13019784.jpg');
+}
+
+.counter {
+      font-size: 12px;
+      color: #333;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 40px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .social-icons img {
+      width: 25px;
+      height: 25px;
+      transition: transform 0.3s ease;
+    }
+    .social-icons img:hover {
+      transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+
+/* Footer */
+.footer {
+  padding: 2px;
+  text-align: center;
+  background: #d1b4c7;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 class="typewriter"><font color="black">WELCOME TO FATINPIJA'S WEBSITE</h1>
+  <p>Student in Diploma Information Management</font></p>
+</div>
+
+<div class="navbar">
+  <a href="file:///C:/Users/User/Downloads/318%20individual/home.html">home</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/my_biodata.html">biodata</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/education.html">education</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/experience.html">experience</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/family.html">family</a>
+  <a href="file:///C:/Users/User/Downloads/318%20individual/gallery.html">gallery</a>
+</div>
+
+<div class="main">
+    <div class="clock" id="clock">00:00:00</div>
+
+  <script>
+    function updateClock() {
+      const clockElement = document.getElementById("clock");
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+
+      // Add leading zero if needed
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      // Update clock display
+      clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Update the clock every second
+    setInterval(updateClock, 1000);
+
+    // Initialize clock immediately
+    updateClock();
+  </script><br>
+
+<section>
+<!-- Optional Audio Controls -->
+<audio controls autoplay>
+    <source src="C:\Users\User\Downloads/replay-shinee.mp3" type="audio/mp3">
+    <source src="C:\Users\User\Downloads/replay-shinee.mp3" type="audio/ogg">
+</audio>
+</section>
+
+
+<h1 class="bounce-text">ABOUT ME!</h1>
+  <h5><font color= #391c4f> Hi, my name is <ins>FATIN HAFIZAH</ins>  <br>
+    I currently study at UiTM Segamat and studying in <sup>Diploma Information Management</sup> </font></h5>
+    <p><b><i><font color= #a823e6>It's nice to meet you all !!</font></i></b></p>
+    <p><font color= #380261>Let's do some explore!</font></p>
+</div>
+
+<div class="social-icons">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/1DeSuZvyT6/?mibextid=wwXIfr" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+    </a>
+
+      <!-- Whatsapp -->
+      <a href="https://wa.link/702n0p" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="Facebook">
+      </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/ftynhfzh/profilecard/?igsh=MWprcnlzZzJ5dmRyNA==" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+</div>
+
+<div class="counter" id="visitor-counter">
+    Visitors: 0
+  </div>
+
+  <script>
+    // Check if there's a counter stored in localStorage
+    let visitorCount = localStorage.getItem("visitorCount");
+
+    // If there's no count, initialize it to 0
+    if (!visitorCount) {
+      visitorCount = 0;
+    }
+
+    // Increment the count by 1
+    visitorCount++;
+
+    // Save the updated count back to localStorage
+    localStorage.setItem("visitorCount", visitorCount);
+
+    // Display the visitor count on the page
+    document.getElementById("visitor-counter").textContent = "Visitors: " + visitorCount;
+  </script>
+
+
+<div class="footer">
+    <p><b><small>Develop by <ins>fatins</ins> <i>for IMD318 individual assignment</i></small></b></p>
+</div>
+
+</body>
+</html>
+
